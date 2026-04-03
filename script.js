@@ -69,8 +69,8 @@ const QUOTES = [
 let STATE = {
   dob: null,
   weeksLived: 0,
-  totalWeeks: 90 * 52,
-  lifespan: 90,
+  totalWeeks: 60 * 52,
+  lifespan: 60,
   countdownInterval: null,
   isMobile: false,
 };
