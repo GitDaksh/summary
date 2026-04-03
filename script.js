@@ -463,7 +463,7 @@ document.getElementById("shareBtn").addEventListener("click", () => {
   const daysLvd = Math.floor((new Date() - dob) / 86400000).toLocaleString();
   const yrs     = (weeksLived / 52).toFixed(1);
 
-  const text = `Life in Weeks\n━━━━━━━━━━━━━━━━━━━━\nBorn: ${formatDate(dob)}\n\n${weeksLived.toLocaleString()} weeks lived\n${daysLvd} days on Earth\n${yrs} years of experience\n\n${pct}% of ${lifespan}-year life used\n${(totalWeeks - weeksLived).toLocaleString()} weeks still ahead\n━━━━━━━━━━━━━━━━━━━━\n lifeinweeksdax.vercel.app/`;
+  const text = `Life in Weeks\n━━━━━━━━━━━━━━━━━━━━\nBorn: ${formatDate(dob)}\n\n${weeksLived.toLocaleString()} weeks lived\n${daysLvd} days on Earth\n${yrs} years of experience\n\n${pct}% of ${lifespan}-year life used\n${(totalWeeks - weeksLived).toLocaleString()} weeks still ahead\n━━━━━━━━━━━━━━━━━━━━\nlifeinweeksdax.vercel.app/`;
 
   document.getElementById("share-card").textContent = text;
   document.getElementById("share-overlay").classList.remove("hidden");
